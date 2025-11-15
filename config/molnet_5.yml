@@ -1,0 +1,17 @@
+model:
+  in_dim: 41
+  add_num: 679
+  emb_dim: 1024         # ↓ from 2048 (stability + generalization)
+  k: 5
+  dropout: 0.3
+  encode_layers: [64, 64, 128, 256, 512]  # sums to 1024
+  decode_layers: [1024, 256, 64]          # shallower decoder
+  env_emb_dim: 256                        # small env projector
+  num_classes: 5
+  # pool_type/attn not used now
+
+train:
+  epochs: 30
+  batch_size: 32
+  num_workers: 0
+  lr: 0.001

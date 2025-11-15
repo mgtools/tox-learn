@@ -1,0 +1,26 @@
+model:
+  in_dim: 41
+  add_num: 1189
+  emb_dim: 2048
+  k: 5
+  dropout: 0.5
+  encode_layers: [64, 64, 128, 256, 512, 1024]  # sums to 2048 -> OK
+  decode_layers: [2048, 512, 256, 128, 32]
+  max_atom_num: 300
+
+  # two-tower additions (you can omit or keep as below)
+  num_classes: 5
+  pool_type: "mean"         # start simple; switch to "attn" later if desired
+  attn_hidden: 128
+  gate_hidden: 4096         # 2 * emb_dim is a good rule of thumb
+
+  # ENV SPLIT: leave all zero so the Env tower uses all 604 dims as one block
+  species_dim: 0
+  ion_dim: 0
+  cont_dim: 0
+
+train:
+  epochs: 30
+  batch_size: 32
+  num_workers: 0
+  lr: 0.001

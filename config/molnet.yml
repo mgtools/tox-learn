@@ -1,0 +1,16 @@
+model:
+  in_dim: 41
+  add_num: 1103
+  emb_dim: 2048
+  k: 5
+  dropout: 0.5
+  encode_layers: [64, 64, 128, 256, 512, 1024]
+  decode_layers: [2048, 512, 256, 128, 32]
+  output_dim: 1  
+  max_atom_num: 300
+
+train:
+  epochs: 200
+  batch_size: 32
+  num_workers: 0
+  lr: 0.001
