@@ -18,10 +18,11 @@ Project Structure
       ├─ mordred_env.yml      # Conda environment (RDKit, Mordred, PyTorch, etc.)
       ├─ data_prep/           # Data preprocessing, standardization, species features, split generation
       ├─ 3DmolTox/            # 3D model (3DMol-Tox) and training code
-      ├─ dataset/             # Sample dataset with mordred fingerprint, using default taxonomy for species representation and split by CAS_ID group
       ├─ config/              # YAML configs for 3d models setup
       ├─ benchmarking/        # Benchmarking code for fingerprints, species encodings, ML models, split types
       └─ README.md
 
 
 
+Sample dataset with mordred fingerprint, using default taxonomy for species representation and split by CAS_ID group
+      [Download dataset from Google Drive](https://drive.google.com/file/d/FILE_ID/view?usp=sharing)
