@@ -25,4 +25,4 @@ Project Structure
 
 
 Sample dataset with mordred fingerprint, using default taxonomy for species representation and split by CAS_ID group
-      [Download dataset from Google Drive](https://drive.google.com/file/d/FILE_ID/view?usp=sharing)
+      [Download dataset from Google Drive](https://drive.google.com/drive/folders/1D-paglmLlnHGQOCLe94TT2F7JtjYhmaP?usp=sharing)
